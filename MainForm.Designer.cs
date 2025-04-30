@@ -193,13 +193,13 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.newPanel = new System.Windows.Forms.Panel();
-            this.easyButton = new System.Windows.Forms.Button();
-            this.mediumButton = new System.Windows.Forms.Button();
-            this.hardButton = new System.Windows.Forms.Button();
             this.newButton = new System.Windows.Forms.Button();
+            this.easyButton = new System.Windows.Forms.Button();
+            this.hardButton = new System.Windows.Forms.Button();
+            this.mediumButton = new System.Windows.Forms.Button();
             this.topPanel = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.historyButton = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.mistakesLabel = new System.Windows.Forms.Label();
             this.timeLabel = new System.Windows.Forms.Label();
             this.linePanel = new System.Windows.Forms.Panel();
@@ -2175,6 +2175,20 @@
             this.newPanel.Size = new System.Drawing.Size(297, 51);
             this.newPanel.TabIndex = 1;
             // 
+            // newButton
+            // 
+            this.newButton.BackColor = System.Drawing.Color.SaddleBrown;
+            this.newButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.newButton.Font = new System.Drawing.Font("Unispace", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.newButton.ForeColor = System.Drawing.Color.LavenderBlush;
+            this.newButton.Location = new System.Drawing.Point(0, 0);
+            this.newButton.Name = "newButton";
+            this.newButton.Size = new System.Drawing.Size(297, 51);
+            this.newButton.TabIndex = 2;
+            this.newButton.Text = "New Game";
+            this.newButton.UseVisualStyleBackColor = false;
+            this.newButton.MouseEnter += new System.EventHandler(this.newButton_MouseEnter);
+            // 
             // easyButton
             // 
             this.easyButton.BackColor = System.Drawing.Color.LimeGreen;
@@ -2190,22 +2204,6 @@
             this.easyButton.Visible = false;
             this.easyButton.Click += new System.EventHandler(this.newButton_Click);
             this.easyButton.MouseLeave += new System.EventHandler(this.hardButton_MouseLeave);
-            // 
-            // mediumButton
-            // 
-            this.mediumButton.BackColor = System.Drawing.SystemColors.Info;
-            this.mediumButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.mediumButton.Font = new System.Drawing.Font("Unispace", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mediumButton.Location = new System.Drawing.Point(93, 0);
-            this.mediumButton.Name = "mediumButton";
-            this.mediumButton.Size = new System.Drawing.Size(112, 51);
-            this.mediumButton.TabIndex = 4;
-            this.mediumButton.Tag = "2";
-            this.mediumButton.Text = "нормальна";
-            this.mediumButton.UseVisualStyleBackColor = false;
-            this.mediumButton.Visible = false;
-            this.mediumButton.Click += new System.EventHandler(this.newButton_Click);
-            this.mediumButton.MouseLeave += new System.EventHandler(this.hardButton_MouseLeave);
             // 
             // hardButton
             // 
@@ -2223,28 +2221,44 @@
             this.hardButton.Click += new System.EventHandler(this.newButton_Click);
             this.hardButton.MouseLeave += new System.EventHandler(this.hardButton_MouseLeave);
             // 
-            // newButton
+            // mediumButton
             // 
-            this.newButton.BackColor = System.Drawing.Color.SaddleBrown;
-            this.newButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.newButton.Font = new System.Drawing.Font("Unispace", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.newButton.ForeColor = System.Drawing.Color.LavenderBlush;
-            this.newButton.Location = new System.Drawing.Point(0, 0);
-            this.newButton.Name = "newButton";
-            this.newButton.Size = new System.Drawing.Size(297, 51);
-            this.newButton.TabIndex = 2;
-            this.newButton.Text = "нова гра";
-            this.newButton.UseVisualStyleBackColor = false;
-            this.newButton.MouseEnter += new System.EventHandler(this.newButton_MouseEnter);
+            this.mediumButton.BackColor = System.Drawing.SystemColors.Info;
+            this.mediumButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.mediumButton.Font = new System.Drawing.Font("Unispace", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mediumButton.Location = new System.Drawing.Point(93, 0);
+            this.mediumButton.Name = "mediumButton";
+            this.mediumButton.Size = new System.Drawing.Size(112, 51);
+            this.mediumButton.TabIndex = 4;
+            this.mediumButton.Tag = "2";
+            this.mediumButton.Text = "нормальна";
+            this.mediumButton.UseVisualStyleBackColor = false;
+            this.mediumButton.Visible = false;
+            this.mediumButton.Click += new System.EventHandler(this.newButton_Click);
+            this.mediumButton.MouseLeave += new System.EventHandler(this.hardButton_MouseLeave);
             // 
             // topPanel
             // 
             this.topPanel.BackColor = System.Drawing.Color.Transparent;
             this.topPanel.Controls.Add(this.historyButton);
-            this.topPanel.Location = new System.Drawing.Point(318, 63);
+            this.topPanel.Location = new System.Drawing.Point(318, 57);
             this.topPanel.Name = "topPanel";
-            this.topPanel.Size = new System.Drawing.Size(155, 24);
+            this.topPanel.Size = new System.Drawing.Size(155, 30);
             this.topPanel.TabIndex = 2;
+            // 
+            // historyButton
+            // 
+            this.historyButton.BackColor = System.Drawing.Color.SaddleBrown;
+            this.historyButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.historyButton.Font = new System.Drawing.Font("Unispace", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.historyButton.ForeColor = System.Drawing.Color.LavenderBlush;
+            this.historyButton.Location = new System.Drawing.Point(3, 0);
+            this.historyButton.Name = "historyButton";
+            this.historyButton.Size = new System.Drawing.Size(149, 30);
+            this.historyButton.TabIndex = 0;
+            this.historyButton.Text = "Game History";
+            this.historyButton.UseVisualStyleBackColor = false;
+            this.historyButton.Click += new System.EventHandler(this.historyButton_Click);
             // 
             // button1
             // 
@@ -2260,30 +2274,16 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // historyButton
-            // 
-            this.historyButton.BackColor = System.Drawing.Color.SaddleBrown;
-            this.historyButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.historyButton.Font = new System.Drawing.Font("Unispace", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.historyButton.ForeColor = System.Drawing.Color.LavenderBlush;
-            this.historyButton.Location = new System.Drawing.Point(3, -6);
-            this.historyButton.Name = "historyButton";
-            this.historyButton.Size = new System.Drawing.Size(149, 30);
-            this.historyButton.TabIndex = 0;
-            this.historyButton.Text = "історія ігор";
-            this.historyButton.UseVisualStyleBackColor = false;
-            this.historyButton.Click += new System.EventHandler(this.historyButton_Click);
-            // 
             // mistakesLabel
             // 
             this.mistakesLabel.AutoSize = true;
             this.mistakesLabel.Font = new System.Drawing.Font("Unispace", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mistakesLabel.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.mistakesLabel.Location = new System.Drawing.Point(223, 761);
+            this.mistakesLabel.Location = new System.Drawing.Point(210, 761);
             this.mistakesLabel.Name = "mistakesLabel";
-            this.mistakesLabel.Size = new System.Drawing.Size(167, 28);
+            this.mistakesLabel.Size = new System.Drawing.Size(166, 23);
             this.mistakesLabel.TabIndex = 3;
-            this.mistakesLabel.Text = "Помилки: 0/0";
+            this.mistakesLabel.Text = "Mistakes: 0/0";
             this.mistakesLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // timeLabel
@@ -2293,7 +2293,7 @@
             this.timeLabel.ForeColor = System.Drawing.Color.SaddleBrown;
             this.timeLabel.Location = new System.Drawing.Point(399, 763);
             this.timeLabel.Name = "timeLabel";
-            this.timeLabel.Size = new System.Drawing.Size(70, 24);
+            this.timeLabel.Size = new System.Drawing.Size(59, 19);
             this.timeLabel.TabIndex = 4;
             this.timeLabel.Text = "00:00";
             this.timeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -2330,7 +2330,7 @@
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LavenderBlush;
             this.ClientSize = new System.Drawing.Size(767, 810);
