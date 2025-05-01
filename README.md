@@ -24,3 +24,6 @@ Sudoku is a logic-based number puzzle where the goal is to fill a 9×9 grid so t
 ---
 
 ![okay](https://github.com/user-attachments/assets/914b1b00-879d-480d-abd2-bac49d2dd667)
+
+
+---
