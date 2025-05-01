@@ -1,4 +1,4 @@
-# 🧠🔢 Sudoku - Logic Puzzle Game 🔢
+# 🧠🔢 Sudoku - Logic Puzzle Game 🔢 (Screenshots are below)
 
 **Sharpen your logic and calculation skills with a visually-captivating, modern UI.**  
 Sudoku brings the timeless number puzzle to life with multiple difficulty levels, smart hints, and progress tracking — all wrapped in a smooth desktop experience.
